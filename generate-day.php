@@ -2,9 +2,6 @@
 	// Include the dates
 	include './dates.php';
 
-	// Your webhook URL
-	$webhook = '[WEBHOOK URL]';
-
 	// Get todays date
 	$today = new DateTime();
 
@@ -21,6 +18,9 @@
 
 			'text' => $day,
 		));
+
+		// Your webhook URL
+		$webhook = '[WEBHOOK URL]';
 
 		// PHP cURL POST request
 		$ch = curl_init($webhook);
