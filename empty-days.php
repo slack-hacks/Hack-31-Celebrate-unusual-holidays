@@ -1,6 +1,6 @@
 <?php
 
-	return array(
+	$dates = array(
 		// Jan
 		'01' => array(
 			'01' => '',

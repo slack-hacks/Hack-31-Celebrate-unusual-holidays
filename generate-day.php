@@ -1,6 +1,6 @@
 <?php
-	// Include the days
-	$days = include './days.php';
+	// Include the dates
+	include './days.php';
 
 	// Your webhook URL
 	$webhook = '[WEBHOOK URL]';
@@ -9,7 +9,7 @@
 	$today = new DateTime();
 
 	// Get the special day!
-	$day = $days[$today->format('m')][$today->format('d')];
+	$day = $dates[$today->format('m')][$today->format('d')];
 
 	// If today has a value
 	if(count($day) > 0) {
