@@ -1,6 +1,6 @@
 <?php
 	// Include the dates
-	include './days.php';
+	include './dates.php';
 
 	// Your webhook URL
 	$webhook = '[WEBHOOK URL]';
